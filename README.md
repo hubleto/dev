@@ -1,1 +1,48 @@
 # Hubleto Dev
+
+How to prepare Hubleto development environment:
+
+  * `cd YOUR_HUBLETO_DEV_FOLDER`
+  * `composer create-project hubleto/dev .`
+  * `npm install`
+  * `npm run build`
+
+# Advanced configuration
+
+## Symlinked repositories
+
+By default, Hubleto dev uses public github repositories to install packages. This has an advantage
+that you do not need to separately install `hubleto/main`, `hubleto/framework` or other core
+repositories. However, if you want to contribute to these core repositories, your dev environment will need
+to symlink their local versions. You can do this by changing your dev's `composer.json`.
+
+Modify each repository `repositories` from:
+
+```
+{
+    "type": "github",
+    "url": "https://github.com/hubleto/framework"
+}
+```
+
+to
+
+```
+{
+    "type": "path",
+    "url": "PATH_TO_YOUR_HUBLETO_FRAMEWORK_LOCAL_REPOSITORY"
+}
+```
+
+Do it for all Hubleto-related repositories (e.g., `hubleto/framework`, `hubleto/main` or `hubleto/terminal`).
+
+Then run `composer update`.
+
+## Configuration file for `php hubleto init`
+
+You might need to re-init the dev environment from time to time by running `php hubleto init`. To save your time and
+minimize errors, you might create a configuration file and pass it as an argument. The init will then run without any prompt.
+
+Create this config file named e.g. `my-dev-config.yaml` (see full example in [init-config-example.yaml](init-config-example.yaml)) and use it followingly:
+
+`php hubleto init my-dev-config.yaml`
