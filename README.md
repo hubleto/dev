@@ -12,9 +12,13 @@ How to prepare Hubleto development environment:
 ## Symlinked repositories
 
 By default, Hubleto dev uses public github repositories to install packages. This has an advantage
-that you do not need to separately install `hubleto/main`, `hubleto/framework` or other core
+that you do not need to separately install `hubleto/main`, `hubleto/framework`, `hubleto/react-ui` or other core
 repositories. However, if you want to contribute to these core repositories, your dev environment will need
-to symlink their local versions. You can do this by changing your dev's `composer.json`.
+to symlink their local versions.
+
+### Composer
+
+For PHP repositories, you can do this by changing your dev's `composer.json`.
 
 Modify each repository `repositories` from:
 
@@ -37,6 +41,24 @@ to
 Do it for all Hubleto-related repositories (e.g., `hubleto/framework`, `hubleto/main` or `hubleto/terminal`).
 
 Then run `composer update`.
+
+### NPM
+
+For UI packages based on react, modify `package.json` from:
+
+```
+"@hubleto/react-ui": "^1.0",
+```
+
+to
+
+```
+"@hubleto/react-ui": "file:../react-ui",
+```
+
+Then run `npm update` and `npm run build`.
+
+During the development, you may use `npm run watch-js` and `npm run watch-css` to speed up the compilation process.
 
 ## Configuration file for `php hubleto init`
 
