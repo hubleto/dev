@@ -1,5 +1,5 @@
-rewriteBase: /hubleto/dev/
-rootUrl: http://localhost/hubleto/dev
+rewriteBase: /hubleto-dev/
+rootUrl: http://localhost/hubleto-dev
 dbHost: localhost
 dbUser: root
 dbPassword: ''

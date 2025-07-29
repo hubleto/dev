@@ -7,6 +7,8 @@ How to prepare Hubleto development environment:
   * `npm install`
   * `npm run build`
 
+> Note: We recommend to create your development environment in `/var/www/html/hubleto-dev` folder.
+
 # Advanced configuration
 
 ## Symlinked repositories
@@ -20,7 +22,10 @@ to symlink their local versions.
 
 For PHP repositories, you can do this by changing your dev's `composer.json`.
 
-Modify each repository `repositories` from:
+First fork & clone all core repositories to your local computer. We recommend to clone everything into `/var/www/html/hubleto` folder.
+E.g., the `hubleto/framework` should be cloned into `/var/www/html/hubleto/framework`.
+
+Then modify each repository in `dev/composer.json` from:
 
 ```
 {
@@ -34,13 +39,13 @@ to
 ```
 {
     "type": "path",
-    "url": "PATH_TO_YOUR_HUBLETO_FRAMEWORK_LOCAL_REPOSITORY"
+    "url": "PATH_TO_YOUR_HUBLETO_FRAMEWORK_LOCAL_FORK"
 }
 ```
 
 Do it for all Hubleto-related repositories (e.g., `hubleto/framework`, `hubleto/main` or `hubleto/terminal`).
 
-Then run `composer update`.
+Then in your `dev` folder run `composer update`.
 
 ### NPM
 
