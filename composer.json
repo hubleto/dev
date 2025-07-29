@@ -1,7 +1,6 @@
 {
     "name": "hubleto/dev",
-    "license": "MIT",
-    "description": "Business Application Hub. Opensource ERP and CRM.",
+    "description": "Development environment for Hubleto.",
     "homepage": "https://www.hubleto.com",
     "support": {
         "issues": "https://github.com/hubleto/main/issues",
