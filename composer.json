@@ -26,11 +26,11 @@
             "url": "https://github.com/hubleto/terminal"
         },
         {
-            "type": "path",
+            "type": "github",
             "url": "https://github.com/hubleto/framework"
         },
         {
-            "type": "path",
+            "type": "github",
             "url": "https://github.com/hubleto/main"
         }
     ],

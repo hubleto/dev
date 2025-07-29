@@ -3,7 +3,7 @@
 How to prepare Hubleto development environment:
 
   * `cd YOUR_HUBLETO_DEV_FOLDER`
-  * `composer create-project hubleto/dev .`
+  * `composer create-project hubleto/dev . -s="dev"`
   * `npm install`
   * `npm run build`
 
