@@ -22,16 +22,16 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "../terminal"
+            "type": "github",
+            "url": "https://github.com/hubleto/terminal"
         },
         {
             "type": "path",
-            "url": "../framework"
+            "url": "https://github.com/hubleto/framework"
         },
         {
             "type": "path",
-            "url": "../main"
+            "url": "https://github.com/hubleto/main"
         }
     ],
     "minimum-stability": "dev"
