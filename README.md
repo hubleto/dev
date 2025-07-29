@@ -2,14 +2,18 @@
 
 How to prepare Hubleto development environment:
 
+> Note: We recommend to create your development environment in `/var/www/html/hubleto-dev` folder.
+
   * `cd YOUR_HUBLETO_DEV_FOLDER`
   * `composer create-project hubleto/dev -s="dev" .`
   * `npm install`
   * `npm run build`
-
-> Note: We recommend to create your development environment in `/var/www/html/hubleto-dev` folder.
+  * `php hubleto init`
 
 # Advanced configuration
+
+The basic dev environment as described above is suitable for development of Hubleto apps.
+If you want to contribute to the core development (e.g. `hubleto/framework`), you should consider advanced configuration.
 
 ## Symlinked repositories
 
