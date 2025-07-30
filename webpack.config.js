@@ -18,13 +18,10 @@ function loadEntriesFromRepository(folder) {
 
 module.exports = (env, arg) => {
   return {
-    // stats: 'verbose',
     entry: {
-      hubleto: [
+      main: [
         './vendor/hubleto/main/src/Main',
-        // './repositories.tsx',
         ...loadEntriesFromRepository(path.resolve(__dirname, 'vendor/hubleto/main/apps')),
-        // ...loadEntriesFromRepository(path.resolve(__dirname, '../apps')),
       ],
     },
     output: {
@@ -32,9 +29,6 @@ module.exports = (env, arg) => {
       filename: '[name].js',
       clean: true
     },
-    // optimization: {
-    //   minimize: true,
-    // },
     module: {
       rules: [
         {
@@ -46,17 +40,6 @@ module.exports = (env, arg) => {
           use: ['style-loader', 'css-loader', 'sass-loader'],
         }
       ],
-    },
-    optimization: {
-      splitChunks: {
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all'
-          }
-        }
-      }
     },
     resolve: {
       modules: [ path.resolve(__dirname, './node_modules') ],
