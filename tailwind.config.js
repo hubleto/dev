@@ -4,6 +4,7 @@ module.exports = {
   content: [
     "./vendor/hubleto/main/**/*.{html,js,twig,tsx}",
     "./vendor/hubleto/framework/**/*.{tsx,twig}",
+    "./vendor/hubleto/apps/**/*.{tsx,twig}",
     "./node_modules/primereact/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [
