@@ -21,7 +21,7 @@ module.exports = (env, arg) => {
     entry: {
       main: [
         './vendor/hubleto/main/src/Main',
-        ...loadEntriesFromRepository(path.resolve(__dirname, 'vendor/hubleto/main/apps')),
+        ...loadEntriesFromRepository(path.resolve(__dirname, 'vendor/hubleto/apps/src')),
       ],
     },
     output: {
@@ -47,7 +47,8 @@ module.exports = (env, arg) => {
       alias: {
         '@hubleto/ui/core': path.resolve(__dirname, 'vendor/hubleto/framework/src/Components/Core'),
         '@hubleto/ui/ext': path.resolve(__dirname, 'vendor/hubleto/framework/src/Components/Ext'),
-        '@hubleto/apps': path.resolve(__dirname, 'vendor/hubleto/main/apps'),
+        '@hubleto/framework': path.resolve(__dirname, 'vendor/hubleto/framework'),
+        '@hubleto/apps': path.resolve(__dirname, 'vendor/hubleto/apps/src'),
       },
     }
   }
