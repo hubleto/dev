@@ -9,7 +9,8 @@
     },
     "keywords": ["hubleto", "crm", "erp", "application", "hub"],
     "require": {
-        "hubleto/main": "dev-main"
+        "hubleto/main": "*",
+        "phpstan/phpstan": "*"
     },
     "autoload": {
         "psr-4": {

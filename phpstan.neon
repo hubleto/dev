@@ -1,0 +1,19 @@
+# example usage: ./vendor/bin/phpstan analyse
+
+parameters:
+	level: 7
+	paths:
+		- .\vendor\hubleto\main
+		- .\vendor\hubleto\framework
+		- .\vendor\hubleto\apps
+	reportUnmatchedIgnoredErrors: false
+	ignoreErrors:
+		- identifier: missingType.iterableValue
+		- '#Call to an undefined method Illuminate\\Database\\Eloquent\\Model::.+#'
+		- '#Cannot call method (.*?) on mixed\.#'
+		- '#Cannot access property (.*?) on mixed\.#'
+		- '#Access to an undefined property Illuminate\\Database\\Eloquent\\Model.+#'
+		- '#Cannot cast mixed to string.#'
+		- '#Cannot cast mixed to int.#'
+		- '#Cannot cast mixed to float.#'
+		- '#Cannot access offset#'
