@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 
-
 function loadEntriesFromRepository(folder) {
   let entries = [];
   if (fs.lstatSync(folder).isDirectory()) {
@@ -42,7 +41,10 @@ module.exports = (env, arg) => {
       ],
     },
     resolve: {
-      modules: [ path.resolve(__dirname, './node_modules') ],
+      modules: [
+        path.resolve(__dirname, './node_modules'),
+        path.resolve(__dirname, '../hubleto/react-ui/node_modules'),
+      ],
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss', '.css'],
       alias: {
         '@hubleto/ui/core': path.resolve(__dirname, 'vendor/hubleto/framework/src/Components/Core'),

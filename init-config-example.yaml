@@ -13,6 +13,7 @@ adminFamilyName: Coder
 adminNick: dev-coder
 adminEmail: dev@example.com
 adminPassword: dev
+generateDemoData: true
 
 # Uncomment following lines if you want to have full control over
 # what apps will be installed. Example below installs minimal set
