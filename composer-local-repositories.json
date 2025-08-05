@@ -23,20 +23,20 @@
     },
     "repositories": [
         {
-            "type": "github",
-            "url": "https://github.com/hubleto/terminal"
+            "type": "path",
+            "url": "../hubleto/terminal"
         },
         {
-            "type": "github",
-            "url": "https://github.com/hubleto/framework"
+            "type": "path",
+            "url": "../hubleto/framework"
         },
         {
-            "type": "github",
-            "url": "https://github.com/hubleto/main"
+            "type": "path",
+            "url": "../hubleto/main"
         },
         {
-            "type": "github",
-            "url": "https://github.com/hubleto/apps"
+            "type": "path",
+            "url": "../hubleto/apps"
         }
     ],
     "minimum-stability": "dev"

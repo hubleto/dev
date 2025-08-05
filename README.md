@@ -1,11 +1,11 @@
 # Hubleto Dev
 
-How to prepare Hubleto development environment:
+## Instalation
 
 > Note: We recommend to create your development environment in `/var/www/html/hubleto-dev` folder.
 
   * `cd YOUR_HUBLETO_DEV_FOLDER`
-  * `composer create-project hubleto/dev -s "dev" .`
+  * `composer create-project hubleto/dev . dev-main`
   * `npm install`
   * `npm run build`
   * `php hubleto init`
@@ -19,8 +19,7 @@ If you want to contribute to the core development (e.g. `hubleto/framework`), yo
 
 By default, Hubleto dev uses public github repositories to install packages. This has an advantage
 that you do not need to separately install `hubleto/main`, `hubleto/framework`, `hubleto/react-ui` or other core
-repositories. However, if you want to contribute to these core repositories, your dev environment will need
-to symlink their local versions.
+repositories. However, if you want to contribute to these core repositories, your dev environment will need to symlink their local versions.
 
 ### Composer
 
