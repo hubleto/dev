@@ -21,6 +21,7 @@ module.exports = (env, arg) => {
       main: [
         './vendor/hubleto/main/src/Main',
         ...loadEntriesFromRepository(path.resolve(__dirname, 'vendor/hubleto/apps/src')),
+        ...loadEntriesFromRepository(path.resolve(__dirname, 'src/apps')),
       ],
     },
     output: {
