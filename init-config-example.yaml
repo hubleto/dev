@@ -18,7 +18,7 @@ adminFamilyName: Coder
 adminNick: dev-coder
 adminEmail: dev@example.com
 adminPassword: dev
-packagesToInstall: crm,marketing,sales,supply-chain,finance
+packagesToInstall: crm,marketing,sales,supply-chain,projects,finance
 
 ### Miscellaneous
 generateDemoData: true
