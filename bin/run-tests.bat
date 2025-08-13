@@ -1,1 +1,1 @@
-./vendor/bin/phpunit --bootstrap boot.php vendor/hubleto/main/tests
+./vendor/bin/phpunit --bootstrap boot.php vendor/hubleto/main/tests tests
