@@ -10,8 +10,7 @@
     },
     "keywords": ["hubleto", "crm", "erp", "application", "hub"],
     "require": {
-        "hubleto/main": "*",
-        "phpstan/phpstan": "*"
+        "hubleto/main": "*"
     },
     "autoload": {
         "psr-4": {
@@ -40,5 +39,9 @@
             "url": "https://github.com/hubleto/apps"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpstan/phpstan": "*",
+        "phpunit/phpunit": "12"
+    }
 }
